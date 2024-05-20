@@ -19,10 +19,11 @@ public class PageListenerView implements ServletRequestListener{
     EventListenDBContext db = new EventListenDBContext();
     private int countView = db.getCountViewinID();
     
+    @Override
     public void requestDestroyed(ServletRequestEvent sre) {
         
     }
-
+    @Override
     public void requestInitialized(ServletRequestEvent sre) {
        countView++;
        db.updateCountView(countView);

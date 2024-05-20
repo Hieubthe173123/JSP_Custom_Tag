@@ -51,5 +51,9 @@ public class ConvertToVnDateTag extends SimpleTagSupport {
             return null;
         }
     }
+    
+    public static void main(String[] args) {
+        
+    }
 
 }

@@ -12,14 +12,14 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="authentication/login">
+        <form action="authentication/login" method="GET">
             <div>
                 Username
-                <input type="text" name="user">
+                <input type="text" name="user" required="">
             </div>
             <div>
                 Password
-                <input type="password" name="pass">
+                <input type="password" name="pass" required="">
             </div>
             <div>
                 <input type="submit" value="Login">
